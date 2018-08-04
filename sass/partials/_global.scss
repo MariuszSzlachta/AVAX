@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 6rem 12px;
+  overflow: hidden;
+}
+
+.section__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-text;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 12px;
+  }
+}
