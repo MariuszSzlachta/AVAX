@@ -142,26 +142,32 @@ window.initMap = function () {
 
 //carousell flickity
 
-const element = document.querySelector('.clients-carousel');
-const flkty = new Flickity(element, {
-    cellAlign: 'left',
-    contain: true,
-    hash: true,
-    pageDots: false
-})
+// const element = document.querySelector('.clients-carousel');
+// const flkty = new Flickity(element, {
+//     cellAlign: 'left',
+//     contain: true,
+//     hash: true,
+//     pageDots: false
+// })
 
 // hamburger menu
 
 const hamburger = document.querySelector('.hamburger');
-const mainNav = document.querySelector('.main-nav');
+const nav = document.querySelector('.nav');
+const mainNav = document.querySelector('.main-navbar');
+const jumbotron = document.querySelector('.jumbotron');
 
 hamburger.addEventListener('click', function () {
-    if (hamburger.classList.contains('close')) {
-        hamburger.classList.remove('close');
-        mainNav.classList.remove('open');
+    if (hamburger.classList.contains('toggled')) {
+        hamburger.classList.remove('toggled');
+        nav.classList.remove('nav--toggled');
+        jumbotron.classList.remove('jumbotron--blured');
+        mainNav.classList.remove('main-navbar--toggled');
     } else {
-        hamburger.classList.add('close');
-        mainNav.classList.add('open');
+        hamburger.classList.add('toggled');
+        nav.classList.add('nav--toggled');
+        jumbotron.classList.add('jumbotron--blured');
+        mainNav.classList.add('main-navbar--toggled');
     }
 })
 

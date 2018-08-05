@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
   <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="/vendor/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>AVAX</title>
 </head>
@@ -16,57 +15,90 @@
 <body>
   <nav class="nav">
     <div class="container">
+      <div class="row center">
 
-      <div class="col-lg-2">
-        <div class="brand">
-          <img class="brand__image" src="images/brand-gold.png" alt="Brand name: Avax">
+        <div class="col-xl-1 col-lg-1 none-md">
+          <div class="brand">
+            <img class="brand__image" src="images/brand-gold.png" alt="Brand name: Avax">
+          </div>
+        </div>
+
+        <div class="col-xl-11 col-lg-11 col-md-12">
+          <ul class="main-navbar">
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Home</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">About Us</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Services</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Our Projects</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Our Team</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Happy Clients</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Price</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Some Facts</a>
+            </li>
+            <li class="main-navbar__item">
+              <a href="" class="main-navbar__link">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="col-lg-10">
-        <ul class="navbar">
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">About Us</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Services</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Our Projects</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Our Team</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Happy Clients</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Price</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Some Facts</a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link">Contact Us</a>
-          </li>
-        </ul>
-        <button class="hamburger">
-          <div class="firefox-fallback">
-            <span class="hamburger__bar"></span>
-            <span class="hamburger__bar"></span>
-            <span class="hamburger__bar"></span>
-          </div>
-        </button>
-      </div>
-
     </div>
+    <button class="hamburger">
+      <div class="firefox-fallback">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </div>
+    </button>
   </nav>
 
-  <header class="jumbotron">
-    
+  <header class="jumbotron .section">
+    <h1 class="jumbotron__title">Design is about
+      <span class="jumbotron__subtitle">communication</span>
+    </h1>
+    <p class="jumbotron__contact">call us: +00 1234 5678</p>
+    <a href="#" class="btn btn--primary">get in touch!</a>
+    <button class="btn btn--primary btn--round"><span class="fas fa-phone"></span></button>
   </header>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section__title">About us</h2>
+      <p class="section__subtitle">Who we are</p>
+
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 col-sm-12">
+          <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae assumenda, corrupti perspiciatis minima
+            praesentium asperiores error repellendus deserunt dolor ad. In animi voluptatum fugit beatae aspernatur voluptatibus
+            natus ipsum sit dolore eaque at vero, magni quas? Blanditiis distinctio facere mollitia aliquam animi sequi perspiciatis
+            molestiae. Odio, tenetur sit deserunt accusantium omnis voluptatem? Non soluta expedita aperiam vero optio cumque
+            est, rem facilis, sequi dolorem iusto eaque obcaecati ad asperiores ab nulla aut praesentium eum itaque labore
+            esse tenetur ex perspiciatis omnis! Iure maiores autem optio delectus porro eligendi qui quasi obcaecati culpa
+            deleniti asperiores, facilis sapiente dicta! Ipsum, consequuntur.</p>
+          <a href="#" class="btn btn--primary">Learn more</a>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-sm-12">
+          <video  class="about__video" controls preload="none">
+            <source src="video/video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
