@@ -29,14 +29,16 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-
+.section__title--white {
+  color: $white;
+}
 .section__subtitle {
+  margin-top: 0;
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   color: $grey-text;
-  margin-top: 0;
 }
 
 @media (max-width: 768px) {

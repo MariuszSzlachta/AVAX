@@ -34,10 +34,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: 0;
   margin-left: 0;
+}
+.row--full-width {
+  width: 100%;
 }
 .center {
   justify-content: center;
@@ -331,7 +334,6 @@
 @media only screen and (max-width: 992px) {
   .container {
     width: 100%;
-
   }
   .col-md,
   .col-md-1,

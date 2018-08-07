@@ -173,8 +173,8 @@ hamburger.addEventListener('click', function () {
 
 //PRTOJECTS FILTER
 
-const tabBtns = document.querySelectorAll('.tab-button');
-const cells = document.querySelectorAll('.cell');
+const tabBtns = document.querySelectorAll('.tab-bar__link');
+const cells = document.querySelectorAll('.panel');
 
 tabBtns.forEach(function (elem) {
     elem.addEventListener('click', function (event) {
@@ -183,11 +183,11 @@ tabBtns.forEach(function (elem) {
 
         cells.forEach(function(elem){
             if (attribute === 'all'){
-                elem.classList.add('visible');
+                elem.classList.add('panel--visible');
             } else if (elem.getAttribute('data-category') === attribute){
-                elem.classList.add('visible');
+                elem.classList.add('panel--visible');
             } else {
-                elem.classList.remove('visible');
+                elem.classList.remove('panel--visible');
             }
         })
 
