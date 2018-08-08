@@ -22,6 +22,11 @@
   display: flex;
   flex-direction: column;
 }
+
+[class*='col-'] {
+  padding: 12px;
+}
+
 .row {
   box-sizing: border-box;
   display: -webkit-box;

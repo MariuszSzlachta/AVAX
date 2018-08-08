@@ -12,15 +12,6 @@ body {
   font-size: 1rem;
 }
 
-[class*='col-'] {
-  padding: 12px;
-}
-
-.col__flex {
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .section {
   padding: 6rem 12px;
   overflow: hidden;
@@ -84,6 +75,10 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+}
+
+[class*='col-'] {
+  padding: 12px;
 }
 
 .row {
@@ -954,6 +949,10 @@ body {
   margin-top: 3rem;
 }
 
+.card--white {
+  background-color: #fff;
+}
+
 .card__icon {
   margin-bottom: 2rem;
   font-size: 8rem;
@@ -1174,6 +1173,63 @@ body {
   }
   .panel__description {
     margin: 0;
+  }
+}
+
+.social-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.social-media__item {
+  margin-bottom: 1rem;
+}
+
+.social-media__item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.social-media__link {
+  text-decoration: none;
+}
+
+.social-media__link:hover .social-media__icon {
+  border: 1px solid #b88b58;
+  background-color: #fff;
+  color: #b88b58;
+}
+
+.social-media__icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border: 1px solid #bebebe;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #bebebe;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .social-media__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 }
 
@@ -1401,5 +1457,14 @@ body {
 
 .services {
   background-color: #000;
+}
+
+.team {
+  background: #bebebe url("../images/members-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.team .card {
+  padding: 3rem 12px;
 }
 /*# sourceMappingURL=style.css.map */

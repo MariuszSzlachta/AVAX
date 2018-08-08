@@ -10,14 +10,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
-
-[class*='col-'] {
-  padding: 12px;
+.image-container {
+  
 }
-.col__flex {
-  display: flex;
-}
-
 .section {
   padding: 6rem 12px;
   overflow: hidden;
