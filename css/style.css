@@ -971,10 +971,17 @@ body {
   color: #fff;
 }
 
+.card__subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .card__text {
   margin-top: 0;
   font-size: 1.4rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 .card__text--grey {
@@ -1466,5 +1473,42 @@ body {
 
 .team .card {
   padding: 3rem 12px;
+}
+
+.clients {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.clients .carousel {
+  width: 100%;
+}
+
+.clients .carousel-cell {
+  min-height: 400px;
+  width: 100%;
+}
+
+.clients .flickity-button {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.clients .previous {
+  left: 20px;
+}
+
+.clients .next {
+  right: 20px;
+}
+
+.clients .card__text {
+  width: 60%;
 }
 /*# sourceMappingURL=style.css.map */

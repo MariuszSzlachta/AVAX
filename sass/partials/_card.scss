@@ -22,11 +22,16 @@
 .card__title--white {
   color: $white;
 }
-
+.card__subtitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
 .card__text {
   margin-top: 0;
   font-size: 1.4rem;
   text-align: center;
+  line-height: 1.5;
 }
 .card__text--grey{
   color: $grey-text;

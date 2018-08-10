@@ -142,13 +142,13 @@ window.initMap = function () {
 
 //carousell flickity
 
-// const element = document.querySelector('.clients-carousel');
-// const flkty = new Flickity(element, {
-//     cellAlign: 'left',
-//     contain: true,
-//     hash: true,
-//     pageDots: false
-// })
+const element = document.querySelector('.carousel');
+const flkty = new Flickity(element, {
+    cellAlign: 'left',
+    contain: true,
+    hash: true,
+    pageDots: false
+})
 
 // hamburger menu
 
