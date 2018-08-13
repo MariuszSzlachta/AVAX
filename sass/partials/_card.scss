@@ -22,6 +22,9 @@
 .card__title--white {
   color: $white;
 }
+.card__title--big-gold {
+
+}
 .card__subtitle {
   font-size: 1.8rem;
   font-weight: bold;
@@ -35,4 +38,22 @@
 }
 .card__text--grey{
   color: $grey-text;
+}
+.card__number {
+  position: relative;
+  margin-bottom: 1.8rem;
+  font-size: 4rem;
+  font-weight: bold;
+  &:after {
+    content: '-';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    color: $grey-text;
+  }
+  &--gold {
+    color: $gold;
+  }
 }
