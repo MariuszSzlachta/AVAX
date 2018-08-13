@@ -1031,17 +1031,18 @@ body {
 }
 
 .tab-bar__link:hover::before {
-  display: block;
+  transform: scale(1);
 }
 
 .tab-bar__link::before {
   content: '';
   position: absolute;
   top: 42px;
-  display: none;
   height: 5px;
   width: 100%;
   background-color: #b88b58;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -1510,5 +1511,61 @@ body {
 
 .clients .card__text {
   width: 60%;
+}
+
+.price {
+  background-color: #ededed;
+}
+
+.pricing-table {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pricing-table:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 10px 40px 10px #c2c2c2;
+}
+
+.pricing-table__title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.pricing-table__value {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pricing-table__period {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.pricing-table__list {
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-table__list-item {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.pricing-table__list-item:not(:last-child)::after {
+  content: '--';
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
