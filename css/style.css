@@ -1545,7 +1545,7 @@ body {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 3.8rem;
   background-color: #fff;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -1576,6 +1576,7 @@ body {
 }
 
 .pricing-table__list {
+  margin-bottom: 3rem;
   padding: 0;
   list-style: none;
 }
@@ -1588,6 +1589,15 @@ body {
 .pricing-table__list-item:not(:last-child)::after {
   content: '--';
   display: block;
+}
+
+@media (max-width: 768px) {
+  .pricing-table__title {
+    font-size: 1.8rem;
+  }
+  .pricing-table__list-item {
+    font-size: 1.6rem;
+  }
 }
 
 .premium-list {
