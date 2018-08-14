@@ -16,24 +16,23 @@ body {
 .section {
   padding: 6rem 12px;
   overflow: hidden;
-}
-
-.section__title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-}
-.section__title--white {
-  color: $white;
-}
-.section__subtitle {
-  margin-top: 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  color: $grey-text;
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    &--white {
+      color: $white;
+    }
+  }
+  &__subtitle {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color: $grey-text;
+  }
 }
 
 @media (max-width: 768px) {
