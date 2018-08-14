@@ -8,32 +8,33 @@
   background: $grey-dark url('../images/jumbotron.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  &--blured {
+    filter: blur(5px);
+  }
+  &__title {
+    margin-bottom: 0;
+    color: $white;
+    font-size: 7.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    display: block;
+    color: $gold
+  }
+  &__contact {
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
   .btn--round {
     bottom: 10px;
     right: 10px;
     font-size: 3rem;
   }
 }
-.jumbotron--blured {
-  filter: blur(5px);
-}
-.jumbotron__title {
-  margin-bottom: 0;
-  color: $white;
-  font-size: 7.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.jumbotron__subtitle {
-  display: block;
-  color: $gold
-}
-.jumbotron__contact {
-  color: $white;
-  font-size: 2.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+
 
 @media (max-width: 1200px) {
   .jumbotron .btn--round {
@@ -43,12 +44,12 @@
 
 @media (max-width: 992px) {
   .jumbotron {
+    &__title {
+      font-size: 6rem;
+    }
     .btn--round {
       display: none;
     }
-  }
-  .jumbotron__title {
-    font-size: 6rem;
   }
 }
 

@@ -1400,12 +1400,6 @@ body {
   background-position: center;
 }
 
-.jumbotron .btn--round {
-  bottom: 10px;
-  right: 10px;
-  font-size: 3rem;
-}
-
 .jumbotron--blured {
   filter: blur(5px);
 }
@@ -1430,6 +1424,12 @@ body {
   text-transform: uppercase;
 }
 
+.jumbotron .btn--round {
+  bottom: 10px;
+  right: 10px;
+  font-size: 3rem;
+}
+
 @media (max-width: 1200px) {
   .jumbotron .btn--round {
     right: 20px;
@@ -1437,11 +1437,11 @@ body {
 }
 
 @media (max-width: 992px) {
-  .jumbotron .btn--round {
-    display: none;
-  }
   .jumbotron__title {
     font-size: 6rem;
+  }
+  .jumbotron .btn--round {
+    display: none;
   }
 }
 
