@@ -16,33 +16,33 @@
   padding: 0;
   width: 100%;
   list-style: none;
-}
-.main-navbar__item {
-  margin-right: 1rem;
-}
-.main-navbar__link {
-  position: relative;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $white;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 52px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out;
-    background-color: $gold;
+  &__item {
+    margin-right: 1rem;
   }
-  &:hover::after {
-    transform: scale(1);
-  }
-  &.active::after {
-    transform: scale(1);
+  &__link {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 52px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+      background-color: $gold;
+    }
+    &:hover::after {
+      transform: scale(1);
+    }
+    &.active::after {
+      transform: scale(1);
+    }
   }
 }
 
@@ -56,11 +56,12 @@
     max-height: 60px;
     background-color: rgba(0,0,0,0);
     transition: background-color 0.3s ease-in-out;
+    &--toggled{
+      max-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
   }
-  .nav--toggled {
-    max-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4)
-  }
+
   .main-navbar {
     flex-direction: column;
     justify-content: space-around;
@@ -68,37 +69,37 @@
     max-height: calc(100vh - 24px);
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
-  }
-  .main-navbar--toggled {
-    transform: scale(1);
-  }
-  .main-navbar__link {
-    margin-right: 0;
-    font-size: 2rem;
+    &--toggled {
+      transform: scale(1);
+    }
+    &__link {
+      margin-right: 0;
+      font-size: 2rem;
+    }
   }
 }
 
 @media (max-width: 768px) {
   .main-navbar {
     justify-content: center;
-  }
-  .main-navbar__item {
-    margin-bottom: 2.4rem;
-  }
-  .main-navbar__link {
-    font-size: 2.4rem;
+    &__item {
+      margin-bottom: 2.4rem;
+    }
+    &__link {
+      font-size: 2.4rem;
+    }
   }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
   .main-navbar {
     margin-top: 10px;
-  }
-  .main-navbar__item {
-    margin-bottom: 1.6rem;
-  }
-  .main-navbar__link {
-    font-size: 1.6rem;
+    &__item {
+      margin-bottom: 1.6rem;
+    }
+    &__link {
+      font-size: 1.6rem;
+    }
   }
 }
 
