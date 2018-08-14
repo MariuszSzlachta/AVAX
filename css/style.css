@@ -1129,6 +1129,16 @@ body {
      object-fit: cover;
 }
 
+.panel__title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.panel__description {
+  font-size: 1.4rem;
+}
+
 .layer {
   position: absolute;
   top: 0;
@@ -1147,16 +1157,6 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   transform: translateY(-120%);
-}
-
-.panel__title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-.panel__description {
-  font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
