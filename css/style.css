@@ -1684,4 +1684,115 @@ body {
     font-size: 1.4rem;
   }
 }
+
+.social-media-info-panel {
+  border-bottom: 1px solid #aeaeae;
+  padding: 1rem 12px;
+}
+
+.counters-list {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.counters-list__item:first-child {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.counters-list__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.counters-list__text {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.counters-list__count {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.counters-list__icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.counters-list .fa-facebook-f {
+  background-color: #336297;
+}
+
+.counters-list .fa-twitter {
+  background-color: #34c5f0;
+}
+
+.counters-list .fa-linkedin-in {
+  background-color: #127cb4;
+}
+
+.counters-list .fa-google-plus-g {
+  background-color: #e74237;
+}
+
+.counters-list .fa-pinterest-p {
+  background-color: #b71c29;
+}
+
+.counters-list .fa-share-alt {
+  color: #000;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .counters-list__item {
+    margin-top: 1.5rem;
+  }
+  .counters-list__item:first-child {
+    margin-top: 0;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+  }
+  .counters-list__link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .counters-list__count {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .counters-list__text {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
