@@ -939,6 +939,15 @@ body {
   background-color: #b88b58;
 }
 
+.btn--up {
+  position: absolute;
+  top: -13%;
+  left: 10px;
+  z-index: 100;
+  box-shadow: none;
+  font-size: 3rem;
+}
+
 .card {
   display: -ms-flexbox;
   display: flex;
@@ -1252,6 +1261,51 @@ body {
   color: #fff;
   background-color: #bebebe;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.social-media__icon--black {
+  border: 1px solid #373737;
+  background-color: #373737;
+}
+
+.social-media__icon--black:hover {
+  background-color: #fff;
+  color: #373737;
+}
+
+.subscribe-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 3rem;
+  background-color: #373737;
+}
+
+.subscribe-box__label {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.subscribe-box__input {
+  margin-bottom: 4rem;
+  border: none;
+  border-bottom: 1px solid #aeaeae;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .subscribe-box__input {
+    width: 100%;
+  }
 }
 
 .nav {
@@ -1897,6 +1951,55 @@ body {
   .map .info-card {
     position: static;
     width: 100%;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 2rem 0;
+  background-color: #000;
+}
+
+.footer__copy {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__text {
+  line-height: 2;
+  font-size: 1.2rem;
+  color: #aeaeae;
+}
+
+.footer .col-flex--column {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.footer .btn--up {
+  top: -13%;
+  left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer__copy {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .footer__text {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .footer .btn--up {
+    top: -3.000%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

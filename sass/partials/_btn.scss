@@ -44,4 +44,12 @@
       background-color: $gold;
     }
   }
+  &--up {
+    position: absolute;
+    top: -13%;
+    left: 10px;
+    z-index: 100;
+    box-shadow: none;
+    font-size: 3rem;
+  }
 }
