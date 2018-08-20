@@ -1995,6 +1995,10 @@ body {
     text-align: center;
     font-size: 1.4rem;
   }
+  .footer .col-flex--column {
+    border-bottom: 1px solid #b88b58;
+    padding-bottom: 4rem;
+  }
   .footer .btn--up {
     top: -3.000%;
     width: 40px;

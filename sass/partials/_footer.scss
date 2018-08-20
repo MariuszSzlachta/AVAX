@@ -25,11 +25,6 @@
 
 @media (max-width: 768px) {
   .footer {
-    // }
-    // .flex {
-    //   min-height: 100px;
-    //   margin-top: 4rem;
-    // }
     &__copy {
       align-self: center;
       margin-top: 2rem;
@@ -39,6 +34,10 @@
     &__text {
       text-align: center;
       font-size: 1.4rem;
+    }
+    .col-flex--column {
+      border-bottom: 1px solid $gold;
+      padding-bottom: 4rem;
     }
     .btn--up {
       top: -3.000%;
