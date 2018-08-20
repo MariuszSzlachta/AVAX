@@ -200,7 +200,15 @@ tabBtns.forEach(function (elem) {
 
     });
 });
-// sprawdza data-category i porównuje z hrefem jeśli jest takie samo to daje klase visible jesli nie to odejmuje klase visible
-// all = po wszystkich daje klase visible 
 
-// z kolejcji cell wybrać te których atrybut data jest taki jak attribute
+// lazy loading
+(function(){
+    var blazy = new Blazy({
+        success: function(element){
+            setTimeout(function(){
+                let parent = element.parentNode;
+                parent.className = parent.className.replace(/\bloading\b/,'');
+            }, 200)
+        }
+    })
+})();
