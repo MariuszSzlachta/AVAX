@@ -1254,14 +1254,6 @@ body {
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-@media (max-width: 1024px) {
-  .social-media__icon {
-    width: 50px;
-    height: 50px;
-    font-size: 2rem;
-  }
-}
-
 .nav {
   position: absolute;
   top: 0;
@@ -1793,6 +1785,37 @@ body {
   }
   .counters-list__text {
     font-size: 2rem;
+  }
+}
+
+.contact {
+  background-color: #f7f7f7;
+}
+
+.contact .btn {
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.form__input, .form__textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid #bebebe;
+  padding-bottom: 5px;
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .contact-section [class*="col-"] {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
