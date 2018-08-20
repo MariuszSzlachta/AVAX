@@ -138,7 +138,14 @@ window.initMap = function () {
         },
         map: map,
     });
+    window.addEventListener('resize', function(){
+        if (window.matchMedia("(max-width: 992px)").matches) {
+            map.setCenter(marker.position);
+        }
+    })
+
 }
+// match media
 
 //carousell flickity
 

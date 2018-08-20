@@ -1818,4 +1818,85 @@ body {
     margin-left: 0;
   }
 }
+
+.map {
+  position: relative;
+  height: 500px;
+  padding: 0;
+}
+
+.map .map-container {
+  height: 500px;
+}
+
+.info-card {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 550px;
+  height: 350px;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 1.4rem;
+}
+
+.info-card [class*="col-"] {
+  padding: 6px;
+}
+
+.info-card .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.info-card .row > div:first-child {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.info-card__icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #bebebe;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.info-card__link, .info-card__text {
+  color: #7e7e7e;
+}
+
+.info-card__link {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .map {
+    height: auto;
+  }
+  .map .map-container {
+    height: 100vh;
+  }
+  .map .info-card {
+    position: static;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
