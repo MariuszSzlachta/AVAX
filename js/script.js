@@ -145,7 +145,6 @@ window.initMap = function () {
     })
 
 }
-// match media
 
 //carousell flickity
 
