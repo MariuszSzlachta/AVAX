@@ -31,7 +31,8 @@
     font-weight: 300;
     color: $black;
     text-decoration: none;
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       transform: scale(1);
     }
     &::before {
@@ -65,7 +66,8 @@
     &__link {
       font-weight: bold;
       text-align: center;
-      &:hover {
+      &:hover,
+      &:focus {
         color: $gold;
       }
       &:hover::before {

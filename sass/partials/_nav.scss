@@ -72,9 +72,18 @@
     &--toggled {
       transform: scale(1);
     }
+    &__item {
+      margin-right: 0;
+    }
     &__link {
       margin-right: 0;
       font-size: 2rem;
+      &:focus {
+        color: $gold
+      }
+      &::after {
+        display: none;
+      }
     }
   }
 }
