@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="nav">
+  <nav class="nav" id="home">
     <div class="container">
       <div class="row center">
 
@@ -27,31 +27,31 @@
         <div class="col-xl-11 col-lg-11 col-md-12">
           <ul class="main-navbar">
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Home</a>
+              <a data-scroll href="#home" class="main-navbar__link">Home</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">About Us</a>
+              <a data-scroll href="#about" class="main-navbar__link">About Us</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Services</a>
+              <a data-scroll href="#services" class="main-navbar__link">Services</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Our Projects</a>
+              <a data-scroll href="#projects" class="main-navbar__link">Our Projects</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Our Team</a>
+              <a data-scroll href="#team" class="main-navbar__link">Our Team</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Happy Clients</a>
+              <a data-scroll href="#clients" class="main-navbar__link">Happy Clients</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Price</a>
+              <a data-scroll href="#price" class="main-navbar__link">Price</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Some Facts</a>
+              <a data-scroll href="#facts" class="main-navbar__link">Some Facts</a>
             </li>
             <li class="main-navbar__item">
-              <a href="" class="main-navbar__link">Contact Us</a>
+              <a data-scroll href="#contact" class="main-navbar__link">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -446,7 +446,7 @@
     </div>
   </section>
 
-  <section class="price section">
+  <section class="price section" id="price">
     <div class="container">
       <h2 class="section__title">Price</h2>
       <p class="section__subtitle">Pricing table</p>
@@ -554,7 +554,7 @@
     </div>
   </section>
 
-  <section class="facts section">
+  <section class="facts section" id="facts">
     <div class="container">
       <h2 class="section__title section__title--white">Some facts</h2>
       <p class="section__subtitle section__subtitle--light">About our work</p>
@@ -635,7 +635,7 @@
     </div>
   </section>
 
-  <section class="contact section">
+  <section class="contact section" id="contact">
     <div class="container">
       <h2 class="section__title">Contact us</h2>
       <p class="section__subtitle">Our agency located in Melbourne, Australia</p>
@@ -708,7 +708,7 @@
   </section>
 
   <footer class="footer">
-    <a href="#" class="btn btn--primary btn--round btn--up"><span class="fas fa-chevron-up"></span></a>
+    <a data-scroll href="#home" class="btn btn--primary btn--round btn--up"><span class="fas fa-chevron-up"></span></a>
     <div class="container">
       <div class="row">
 
@@ -773,5 +773,11 @@
   <script src="vendor/hash.js"></script>
   <script src="js/script.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxh2X1fRifIDq5BfrCIZwBGdXgnxDAexs&callback=initMap"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    easing: 'easeOutQuint',
+  });
+  </script>
 </body>
 </html>
