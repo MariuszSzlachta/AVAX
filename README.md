@@ -1,7 +1,7 @@
 https://mariuszszlachta.github.io/AVAX/
 
 
-# Sudoku
+# AVAX
 
 ## What's this?
 This is landing page coded from *.psd file.
