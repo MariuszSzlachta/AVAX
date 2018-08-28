@@ -21,7 +21,7 @@ NPM scripts: browser-sync, nu-html-checker, globster, rim-raf. See more in packa
 ## How to run
 
 - Download project from my github and unpack
-- cd sudoku-master
+- cd AVAX-master
 - npm install
 - npm run watch, to start developing.
 
