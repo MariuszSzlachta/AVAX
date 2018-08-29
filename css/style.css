@@ -1599,6 +1599,15 @@ body {
   width: 60%;
 }
 
+@media (max-width: 568px) {
+  .clients {
+    overflow: scroll;
+  }
+  .clients .card__text {
+    width: 80%;
+  }
+}
+
 .price {
   background-color: #ededed;
 }
@@ -1897,6 +1906,7 @@ body {
 .map {
   position: relative;
   height: 500px;
+  border-top: 1px solid #373737;
   padding: 0;
 }
 

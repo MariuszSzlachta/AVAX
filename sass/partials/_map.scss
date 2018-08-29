@@ -1,6 +1,7 @@
 .map {
   position: relative;
   height: 500px;
+  border-top: 1px solid $grey-dark;
   padding: 0;
   .map-container {
     height: 500px;
