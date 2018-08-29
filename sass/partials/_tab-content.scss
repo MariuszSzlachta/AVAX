@@ -56,11 +56,11 @@
     bottom: 0;
     padding: 0;
     width: 100%;
-    height: 40%;
+    height: 35%;
     transform: translateY(0);
   }
   .panel__title {
-    margin: 0.5rem;
+    margin: 0 0 0.5rem ;
   }
   .panel__description {
     margin: 0;
@@ -81,13 +81,17 @@
     justify-content:flex-start;
     padding: 0;
     width: 100%;
-    height: 40%;
+    height: 35%;
     transform: translateY(0);
   }
   .panel__title {
-    margin: 0.5rem;
+    margin: 0.5rem 0 0;
+    font-size: 1.4rem;
+    line-height: 1.5;
   }
   .panel__description {
     margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 }
